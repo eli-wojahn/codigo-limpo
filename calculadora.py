@@ -1,20 +1,39 @@
+def soma():
+    x = float(input("Primeiro numero: "))
+    y = float(input("Segundo numero: "))
+    print("Soma: ",x+y)
 
-# inserir string para escolher operação
-calcula = input("Digite a operação desejada (soma, sub, mult, div): ")
+def subtracao():
+    x = float(input("Primeiro numero: "))
+    y = float(input("Segundo numero: "))
+    print("Subtracao: ",x-y)
 
-# variáveis com entrada de números
-numero1 = input("Digite o primeiro número: ")
-numero2 = input("Digite o segundo número: ")
+def multiplicacao():
+    x = float(input("Primeiro numero: "))
+    y = float(input("Segundo numero: "))
+    print("Multiplicacao: ",x*y)
 
-if calcula == "soma":
-	resultado = int(numero1) + int(numero2)
-if calcula == "sub":
-	resultado = int(numero1) - int(numero2)
-if calcula == "mult":
-	resultado = int(numero1) * int(numero2)
-if calcula == "div":
-	resultado = int(numero1) / int(numero2)
-else:
-	resultado = "Operação não suportada"
-    
-print("O resultado da operação é: ", resultado)
+def divisao():
+    x = float(input("Primeiro numero: "))
+    y = float(input("Segundo numero: "))
+    print("Divisao: ",x/y)
+
+opcao=1
+
+while opcao:
+    print("0. Sair")
+    print("1. Somar")
+    print("2. Subtrair")
+    print("3. Multiplicação")
+    print("4. Divisão ")
+
+    opcao = int(input("Opção: "))
+
+    if(opcao==1):
+        soma()
+    if(opcao==2):
+        subtracao()
+    if(opcao==3):
+        multiplicacao()
+    if(opcao==4):
+        divisao()
